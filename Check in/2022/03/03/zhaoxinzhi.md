@@ -1,1 +1,1 @@
-[面试](../../../../participants/zhaoxinzhi/八股/0302字节杭州-国际化电商后端一面.md)
+[面试](../../../../participants/zhaoxinzhi/面试/0302字节杭州-国际化电商后端一面.md)
