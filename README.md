@@ -15,7 +15,7 @@
 10. **如果对群规存在任何疑问，请在群里提出，每次打卡前若不提出，则按之前的规则进行查卡，届时任何措辞都视为无效的辩护**
 
 ### 提交指南
-1. 向黄佳新or answerer申请repo编辑权限，并接受邀请
+1. 向群主申请repo的编辑权限，并接受邀请
 2. `git clone git@github.com:coderhare/Cruel_Interview.git` 该repo到本地， 不要clone http链接，否则后续push无权限
 3. 每次提交尽量合成一个commit
 4. `git push origin HEAD:main`提交到远端repo
