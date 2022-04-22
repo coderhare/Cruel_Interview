@@ -5,29 +5,30 @@
 - Redis 内置了复制（replication），LUA 脚本（Lua scripting），LRU 驱动事件（LRU eviction），事务（transactions）和不同级别的 磁盘持久化（persistence）；
 - Redis 通过 哨兵（Sentinel） 和自动分区（Cluster）提供高可用性（high availability）。
 
-
 ## Redis 特性
 
 - 速度快
-单节点读110000次/s，写81000次/s
+  单节点读110000次/s，写81000次/s
 
 - 数据存放内存中
-用 C 语言实现，离操作系统更近
-单线程架构，6.0 开始支持多线程（CPU、IO 读写负荷）
-  
+  用 C 语言实现，离操作系统更近
+  单线程架构，6.0 开始支持多线程（CPU、IO 读写负荷）
+
 - 持久化
-数据的更新将异步地保存到硬盘（RDB 和 AOF）
-多种数据结构 - 不仅仅支持简单的 key-value 类型数据，还支持：字符串、hash、列表、集合、有序集合，
-支持多种编程语言
-  
+  数据的更新将异步地保存到硬盘（RDB 和 AOF）
+  多种数据结构 - 不仅仅支持简单的 key-value 类型数据，还支持：字符串、hash、列表、集合、有序集合，
+  支持多种编程语言
+
 - 功能丰富
-HyperLogLog、GEO、发布订阅、Lua脚本、事务、Pipeline、Bitmaps，key 过期
+  HyperLogLog、GEO、发布订阅、Lua脚本、事务、Pipeline、Bitmaps，key 过期
+
 - 简单稳定
-源码少、单线程模型
+  源码少、单线程模型
+
 - 主从复制
-Redis 支持数据的备份（master-slave）与集群（分片存储），以及拥有哨兵监控机制。
-Redis 的所有操作都是原子性的，同时 Redis 还支持对几个操作合并后的原子性执行。
-  
+  Redis 支持数据的备份（master-slave）与集群（分片存储），以及拥有哨兵监控机制。
+  Redis 的所有操作都是原子性的，同时 Redis 还支持对几个操作合并后的原子性执行。
+
 ## Redis 典型使用场景
 
 1. 缓存
