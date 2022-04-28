@@ -20,7 +20,7 @@ MyISAM 引擎就不支持行锁。不支持行锁意味着并发控制只能使�
 
 ### 死锁与死锁检测
 
-![](../images/事务死锁.png)事务 A 在等待事务 B 释放 id=2 的行锁，而事务 B 在等待事务 A 释放 id=1 的行
+![](/Users/wocaibujiaoquanmei/Library/Application%20Support/marktext/images/2022-04-27-09-31-34-image.png)事务 A 在等待事务 B 释放 id=2 的行锁，而事务 B 在等待事务 A 释放 id=1 的行
 
 锁。 事务 A 和事务 B 在互相等待对方的资源释放，就是进入了死锁状态。当出现死锁以
 
