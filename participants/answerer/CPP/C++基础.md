@@ -107,3 +107,25 @@ C++11引用右值引用可以实现**移动语义**与**完美转发**
 >  感觉这部分内容有点少，所以不希望单开。
 
 merge是合并，rebase是复位基地，merge每次都会产生一个新的结点，而rebase不会，rebase会将两个分支融合为一个线性的操作，因此，如果是为了得到更好的提交树，使用rebase操作更好些。
+
+
+### new, malloc, delete, free的区别
+new 底层是malloc，new实际上是调用malloc申请内存，再调用构造函数
+```c++
+Object * obj;
+try{
+    void *mem = operator new(sizeof(obj));
+    obj = static_cast<T>(mem);
+    obj->Object::Object();
+}
+catch(std::bad_alloc){
+    //失败则不构造
+}
+```
+delete底层是free，在编译器视图，它干了这两件事：
+```c++
+    obj->Object::~Object();
+    operator delete(obj);
+```
+使用new[]而不使用delete[]导致的内存泄漏：
+虽然使用delete会释放对象的内存，但是对象中申请的内存没有得到释放，所以需要使用delete[]来调用所有析构函数。
