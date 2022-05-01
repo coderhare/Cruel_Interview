@@ -1,17 +1,3 @@
-## 一、写在前面
 
-大量的TIME_WAIT 状态 TCP连接对业务有什么影响怎么处理
 
-## 二、TCP
-
-问题描述：
-
-什么现象？
-
-什么影响？
-
-问题分析
-
-解决方案
-
-底层原理
+[大量TCP连接产生timewait状态](../../../../participants/zhaoxinzhi/KnowledgeIsPower/大量TCP连接产生timewait状态.md)
