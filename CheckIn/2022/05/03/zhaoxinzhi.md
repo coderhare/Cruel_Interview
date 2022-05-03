@@ -20,7 +20,6 @@ BMQ完全兼容kafka协议，在客户端使用没有区别。
 
 发布订阅模式，不一定是发布者通知，也可能是订阅者主动去捞取
 
-![image-20220422130115527](/Users/bytedance/Library/Application Support/typora-user-images/image-20220422130115527.png)
 
 完全解耦，扩展性高
 
