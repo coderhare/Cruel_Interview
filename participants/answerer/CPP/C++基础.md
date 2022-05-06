@@ -111,6 +111,7 @@ merge是合并，rebase是复位基地，merge每次都会产生一个新的结�
 
 ### new, malloc, delete, free的区别
 new 底层是malloc，new实际上是调用malloc申请内存，再调用构造函数
+当申请的内存小于128k时，malloc底层使用brk()函数来进行内存的分配，否则，使用mmap函数进行内存的分配，
 ```c++
 Object * obj;
 try{
