@@ -1,0 +1,1 @@
+[vector](../../../../participants/answerer/CPP/vector.md)
