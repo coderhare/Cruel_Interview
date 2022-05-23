@@ -21,13 +21,15 @@
 在 Go 1.9 版本之前定义内建类型的代码是这样写的：
 
 ```
-type byte uint8type rune int32
+type byte uint
+8type rune int32
 ```
 
 而在 Go 1.9 版本之后变为：
 
 ```
-type byte = uint8type rune = int32
+type byte = uint8
+type rune = int32
 ```
 
 这个修改就是配合类型别名而进行的修改。
