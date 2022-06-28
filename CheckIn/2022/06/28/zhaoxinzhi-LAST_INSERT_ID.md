@@ -67,6 +67,7 @@ MySQL的LAST_INSERT_ID的注意事项：
 
  第五、在insert的时候必须不能显式的指明id，不然`LAST_INSERT_ID()`就会返回0。
 
+> 参考链接：https://oomake.com/question/1257716
 > 即对于insert的字段，只有以下两种情况，才会符合第五条： 
 >
 > 1. ID字段为null，显式 插入。
@@ -87,4 +88,12 @@ select LAST_INSERT_ID() as id  -- 输出的是0
 INSERT INTO `zxz_test`.`task` (`tenant_id`, `table_code_id`) VALUES (60, 6);
 select LAST_INSERT_ID() as id
 ```
+
+应该在INSERT之后使用LAST_INSERT_ID()，在INSERT和SELECTLAST_INSERT_ID()中没有其他SQL语句
+
+
+
+> 在自己实现的mybatis中出现的这个bug以及解决方法分析：
+>
+> http://www.360doc.com/content/22/0627/08/78097014_1037561713.shtml
 
