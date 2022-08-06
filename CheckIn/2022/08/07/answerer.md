@@ -1,0 +1,1 @@
+[redis](../../../../participants/answerer/database/redis八股文.md)
